@@ -14,7 +14,7 @@ const VideoDownloadForm = () => {
     event.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('https://youtube-downloader-fastapi.onrender.com/api/download/video', {
+      const response = await axios.post('https://youtube-downloader-fastapi-1.onrender.com/api/download/video', {
         url,
         resolution,
         video_only: videoOnly,

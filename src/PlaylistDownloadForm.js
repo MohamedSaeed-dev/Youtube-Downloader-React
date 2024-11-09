@@ -12,7 +12,7 @@ const PlaylistDownloadForm = () => {
     event.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('https://youtube-downloader-fastapi.onrender.com/api/download/playlist', {
+      const response = await axios.post('https://youtube-downloader-fastapi-1.onrender.com/api/download/playlist', {
         url,
         resolution
       }, { responseType: 'blob' });
